@@ -1,0 +1,403 @@
+﻿
+
+
+
+-- AREA(AREA_NO, AREA_NM)
+INSERT INTO AREA VALUES( '01' , '위저딩 월드 오브 해리 포터™' );
+INSERT INTO AREA VALUES( '02' , '미니언 파크' );
+INSERT INTO AREA VALUES( '03' , '유니버설 원더랜드' );
+INSERT INTO AREA VALUES( '04' , '할리우드' );
+INSERT INTO AREA VALUES( '05' , '뉴욕' );
+INSERT INTO AREA VALUES( '06' , '샌프란시스코' );
+INSERT INTO AREA VALUES( '07' , '쥬라기 공원' );
+INSERT INTO AREA VALUES( '08' , '애머티 빌리지' );
+
+
+
+
+
+--INSERT INTO CMMN_CODE VALUES('COMMON_CODE', CODE_NM)
+
+INSERT INTO CMMN_CODE VALUES( 'T000' , '티켓종류' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T100' , '1DAY 스튜디오 패스' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T110' , '1DAY 스튜디오 패스 - 성인' , 78000 );
+INSERT INTO CMMN_CODE VALUES( 'T120' , '1DAY 스튜디오 패스 - 아동' , 54000 );
+INSERT INTO CMMN_CODE VALUES( 'T130' , '1DAY 스튜디오 패스 - 노인' , 71000 );
+INSERT INTO CMMN_CODE VALUES( 'T200' , '1.5DAY 스튜디오 패스' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T210' , '1.5DAY 스튜디오 패스 - 성인' , 126000 );
+INSERT INTO CMMN_CODE VALUES( 'T220' , '1.5DAY 스튜디오 패스 - 아동' , 86000 );
+INSERT INTO CMMN_CODE VALUES( 'T300' , '2DAY 스튜디오 패스' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T310' , '2DAY 스튜디오 패스 - 성인' , 154000 );
+INSERT INTO CMMN_CODE VALUES( 'T320' , '2DAY 스튜디오 패스 - 아동' , 105000 );
+INSERT INTO CMMN_CODE VALUES( 'T400' , '연간 패스 라이트' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T410' , '연간 패스 라이트 - 성인' , 198000 );
+INSERT INTO CMMN_CODE VALUES( 'T420' , '연간 패스 라이트 - 아동' , 138000 );
+INSERT INTO CMMN_CODE VALUES( 'T500' , '연간 패스' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T510' , '연간 패스 - 성인' , 268000 );
+INSERT INTO CMMN_CODE VALUES( 'T520' , '연간 패스 - 아동' , 178000 );
+INSERT INTO CMMN_CODE VALUES( 'T600' , '연간 패스 VIP' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T610' , '연간 패스 VIP - 성인' , 378000 );
+INSERT INTO CMMN_CODE VALUES( 'T620' , '연간 패스 VIP - 아동' , 258000 );
+INSERT INTO CMMN_CODE VALUES( 'T700' , '익스프레스 패스 프리미엄' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T710' , '익스프레스 패스 프리미엄 - 성인' , 187000 );
+INSERT INTO CMMN_CODE VALUES( 'T720' , '익스프레스 패스 프리미엄 - 아동' , 187000 );
+INSERT INTO CMMN_CODE VALUES( 'T730' , '익스프레스 패스 프리미엄 - 노인' , 187000 );
+INSERT INTO CMMN_CODE VALUES( 'T800' , '익스프레스 패스 7' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T810' , '익스프레스 패스 7 - 성인' , 108000 );
+INSERT INTO CMMN_CODE VALUES( 'T820' , '익스프레스 패스 7 - 아동' , 108000 );
+INSERT INTO CMMN_CODE VALUES( 'T830' , '익스프레스 패스 7 - 노인' , 108000 );
+INSERT INTO CMMN_CODE VALUES( 'T900' , '익스프레스 패스 4' , NULL );
+INSERT INTO CMMN_CODE VALUES( 'T910' , '익스프레스 패스 4 - 성인' , 78000 );
+INSERT INTO CMMN_CODE VALUES( 'T920' , '익스프레스 패스 4 - 아동' , 78000 );
+INSERT INTO CMMN_CODE VALUES( 'T930' , '익스프레스 패스 4 - 노인' , 78000 );
+
+
+
+-- ATTRACTION ( ATTRACTION_NO , AREA_NO , ATTRACTION_NM , ATTRACTION_TY , ATTRACTION_DC 
+--     , PHOTO_COURS , OPRAT_AT , OPER_BEGIN_TIME , OPER_END_TIME )
+INSERT INTO ATTRACTION VALUES( '01' , '01' , '트라이위저드 스피릿 랠리' , '라이드' , '마법학교 학생의 퍼포먼스.\r\n3대 마법학교 대항경기를 위해 호그와트™마법마술학교에 내교중인, 덤스트랭과 보배튼. 각 학교의 퍼포먼스. 강력한 액션과 우아한 연기에 매료됩니다.' , 'img/attraction/triwizard-spirit-rally-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '02' , '01' , '해리포터 앤드 더 포비든 저니 ™' , '라이드' , '한층 더 파워업 한 마법의 효과로 드래곤의 불꽃과 디멘토의 냉기가 전신을 직격! 360도로 퍼지는 마법의 세계를 더욱 리얼하게! 온몸으로 체험하는 새로운 차원의 모험!' , 'img/attraction/harry-potter-and-the-forbidden-journey-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '03' , '01' , '플라이트 오브 더 히포 그리프 ™' , '라이드' , '해그리드™에서 히포그리프로 가는 올바른 접근법을 배운 후 비행훈련을 시작합니다.\r\n\n참수리 머리와 말 몸통을 가진 히포그리프는 매우 자랑스러운 마법생물이므로 가까이 다가올 때 절하는 것을 잊지맙시다. 해그리드 오두막과 호박 밭 상공을 선회하는 라이드에서 멋진 경관도 즐겨 주세요.' , 'img/attraction/flight-of-the-hippogriff-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '04' , '01' , '개구리 성가대' , '라이드' , '마법 학교 학생들의 노래의 하모니.\r\n호그와트 ™ 마법 마술 학교 학생들에 의한 훌륭한 노래의 하모니를 즐길 수 있습니다. 그리핀 인형 ™, 스리자린 ™, 핫후루빠후 ™, 레이븐 클로 ™의 각 기숙사에서 학생들 1명씩을 선발하여 총 4 명으로 구성된 코러스가 마법 세계의 명곡을 선보입니다. 재능 넘치는 개구리들의 반주에도 주목해 주세요.' , 'img/attraction/frog-choir-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '05' , '01' , '완드 스터디' , '라이드' , '어마어마한 마법이 눈앞에!\r\n본적도 없는 엄청난 마법이 당신 눈앞에서 펼쳐집니다! 어엿한 마법사가 되기 위해서, 마법을 연습하는 호그와트 ™ 마법 학교 학생들. 성공과 실패를 반복하며 연습에 매진하는 그들을 지켜봐 주세요. 용기 있는 마법사분들의 도움도 받아보세요!' , 'img/attraction/wand-studies-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '06' , '02' , '스페이스 킬러' , '게임' , '세 자매가 좋아하는 그 바주카 게임에 도전!\r\n미니언 세 자매가 좋아하는 그 게임을 미니언 파크에도 오픈! 도전해서 경품을 받아보세요!' , 'img/attraction/space-killer-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '07' , '02' , '바나나 날리기 게임' , '게임' , '좋아하는 바나나를 날려, 미니언으로부터의 포상 획득!' , 'img/attraction/banana-cabana-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '08' , '02' , '미니언 그리팅' , '쇼' , '거리를 산책 중인 미니언들과 친해지자!\r\n「미니언·파크」가장 깊은 곳에서 한층 더 이채를 발하는 구루의 저택. 그 지하 연구실에 사는 미니언들이, 저택 앞에 가끔 등장! 친해질 수 있는 기회!' , 'img/attraction/minions-greeting-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '09' , '02' , '미니언 엉망진창 아이스' , '라이드' , '얼고, 미끄러지고, 엉망이 된 빙상 레이스!\r\n미니언 파크의 열기로 공원 내 수영장이 들끓는다!?\r\n당황한 미니언들, 거대 얼림총을 꺼내어 냉동광선, 발사~!\r\n갑자기 출현한 아이스링크에 미니언들의 장난기가 발동했다.\r\n제빙차를 몰고, 저쪽으로 반들반들, 이쪽으로 반들반들, 예측불능한 장난꾸러기 전개 빙상 레이스가 시작되었다!\r\n\r\n협찬: 주식회사 에디온' , 'img/attraction/freeze-ray-sliders-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '10' , '02' , '스페이스 킬러' , '게임' , '귀엽고 웃겨서 대흥분. 장난꾸러기 대소동의 한복판으로!\r\n미니언들이 일으키는 어처구니없는 대소동에, 거대 돔 스크린에 비친 현장 영상에 휘말리는, 대흥분의 라이드에 오르자! 무대는 괴도 구루의 저택 겸 연구실. 구루가 발명한 특별한 전단에 올라타면, "미니언이 되기"위한, 기상천외한 트레이닝이 시작!\r\n\r\n협찬 : 일본항공주식회사' , 'img/attraction/despicable-me-minion-mayhem-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '11' , '02' , '미니언 랠리' , '게임' , '미니언 파크 내에 이빨 빠진 미니언 찾아봐!\r\nd완성하면 미니언들 선물을 받을 수 있어. 뜻밖의 곳에 이상한 미니언이 숨어 있을지도!? 미니언 파크에 오면 스페이스 킬러 등 게임 코너에서 책자를 받아가자! (유료)' , 'img/attraction/minion-rally-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '12' , '03' , '어니의 러버더키 레이스' , '게임' , '어니 맘에 드는 오리 장난감 뜬 강에서 물놀이해요!\r\n마음에 드는 오리를 골라 언덕 위에서 띄워 결승선을 향하자.\r\n중간에 걸리거나 하지 않고, 끝까지 잘 도착할 수 있을까요?' , 'img/attraction/ernies-rubber-duckie-race-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '13' , '03' , '아비의 매지컬 트리' , '게임' , '나무 속은 커다란 정글짐이에요!\r\n큰 나무 속을 들여다보면 안에 펼쳐진 것이 너무나 즐거운 정글짐이에요!\r\n열심히 해서 정상까지 올라가면 어떤 경치가 보일까요?' , 'img/attraction/abbys-magical-tree-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '14' , '03' , '아비의 매지컬 파티' , '게임' , '큰 별이나 공을 가지고 자유롭게 놀아요!\r\n애비가 마법을 건 홀에는 커다란 별의 블록이나 공이 있어요. 블록위에 오르거나 공을 던지거나 해서, 작은 친구들도 큰 친구들도, 모두 함께 사이좋게 놀아요!' , 'img/attraction/abbys-magical-party-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '15' , '03' , '엘모의 고고 스케이트보드' , '라이드' , '엘모와 함께 경사면을 종횡무진 달려봐요!\r\n엘모와 함께 스케이트보드를 타고 경사면을 시원하게 달려보세요!' , 'img/attraction/elmos-go-go-skateboard-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '16' , '03' , '엘모의 거품 거품' , '라이드' , '엘모의 꿈의 세계에 오신 것을 환영합니다. 애완용 금붕어 도로시를 타고 물 위로 작은 여행을 떠나요! 엘모가 만드는 비누방울을 보면서 느긋하게 크루즈합니다. 꿈을 꾸는 편안한 실내 라이드 어트랙션입니다.' , 'img/attraction/elmos-bubble-bubble-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '17' , '03' , '엘모의 작은 드라이브' , '라이드' , '3세 어린이부터 운전을 만끽할 수 있는 라이드 어트랙션. 귀여운 엘모 디자인의 차로 주회 코스를 드라이브하세요.' , 'img/attraction/elmos-little-drive-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '18' , '03' , '글로버의 컨스트럭션 컴퍼니' , '게임' , '가늘고 긴 블록이나 톱니바퀴 같은 블록. 여러가지 모양의 큰 블록이 가득! 무엇을 만들까요? 생각나는대로 자유롭게 조립해서 즐겨요!' , 'img/attraction/grovers-construction-company-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '19' , '03' , '스누피 사운드 스테이지 어드벤처 ™' , '게임' , '스누피들의 영화 스튜디오에서 놀아요!\r\n어린이가 자유롭게 즐길 수 있는 장치가 가득한, 실내형 플레이랜드입니다.' , 'img/attraction/snoopy-sound-stage-adventure-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '20' , '03' , '스누피의 그레이트 레이스™' , '라이드' , '스누피 감독님의 촬영 현장을 코스터로 누비세요!\r\n빈틈없이 달려가는 롤러코스터는 작아도 박진감 넘치게! 짜릿한 스릴, 두근두근 두근 코스터 데뷔를 장식해보자.' , 'img/attraction/snoopys-great-race-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '21' , '03' , '세서미 스트리트™' , '라이드' , '세서미 스트리트™의 동료들이 자동차에!\r\n마치 센트럴 파크 안을 달리는 것 같은 박력 만점의 드라이브를 즐길 수 있는 라이드 어트랙션입니다.' , 'img/attraction/sesames-big-drive-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '22' , '03' , '버트와 어니의 원더더시' , '게임' , '볼에 있는 풀에 미끄러져 들어가거나 잠수하거나 해요!\r\n버트와 어니가 기다리는 풀장을 향해 뻗어가는 미끄럼틀입니다. 용기를 내어 미끄러져 내려가면 그 곳은 파란색과 흰색 볼이 가득한 바다에요!' , 'img/attraction/bert-and-ernies-wonder-the-sea-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '23' , '03' , '헬로키티의 컵케이크 드림' , '라이드' , '빙글빙글 돌며 헬로키티의 깜찍한 세상을 즐겨보세요!\r\n헬로 키티의 케이크 파티에 초대. 울긋불긋하게 늘어선 컵케이크 중에서 여러분은 어떤 것을 선택할까요?' , 'img/attraction/hello-kittys-cupcake-dream-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '24' , '03' , '빅 버드의 빅 네스트' , '게임' , '센트럴파크에 나타난 빅버드 둥지는 즐거운 여행입니다. 균형을 잡으면서 로프를 건너거나 네트 위를 오르락내리락 하거나 합니다. 기운차게 몸을 움직이자구요!' , 'img/attraction/big-birds-big-nest-children-playing-jungle-gym-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '25' , '03' , '빅 버드의 빅 톱 서커스' , '라이드' , '세서미 스트리트™의 세계를 도는 컬러풀한 회전목마입니다.\r\n빅버드가 서커스 단장을 맡았습니다. 단장의 신호로 빙글빙글 돌기 시작하는 많은 동물들의 등을 타고 말입니다.' , 'img/attraction/big-birds-big-top-circus-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '26' , '03' , '플라잉 스누피' , '라이드' , '스누피와 함께 하늘을 날아요! 땅콩 동료들의 주위를 직접 조종해서 상승하거나 저공 비행을 하거나 말이죠.\r\n높이 날아올라 구름 위에 있는 것 같은 푹신푹신한 기분을 느껴보세요.' , 'img/attraction/the-flying-snoopy-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '27' , '03' , '모피의 벌룬 트립' , '게임' , '기구를 타고 원더랜드 상공을 여행하세요!\r\n모피가 모두를 즐거운 기구 여행에 초대해 주었어요.\r\n푸른 하늘로 날아오르며 눈 아래 펼쳐지는 원더랜드의 깜찍한 세계를 느껴보세요!' , 'img/attraction/moppys-balloon-trip-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '28' , '04' , '슈렉 4-D 어드벤처' , '쇼' , '슈렉과 여행하는 오리지널 스토리. 오감으로 체감하는 4-D의 세계로!\r\n드림웍스의 아카데미 수상 영화 슈렉에서 탄생한 파크만의 오리지널 스토리. 슈렉과 동키와 함께 짜릿한 새로운 모험으로 떠나보세요!' , 'img/attraction/shreks-4d-adventure-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '29' , '04' , '싱 온 투어' , '쇼' , '모든 생물의 여러분! 드디어, 세계적 뮤지컬 쇼 「싱 온 투어」가, 이곳 일루미네이션 극장에서 개막했습니다! 영혼을 뒤흔드는 대열창! 보고 있는 당신의 가슴도 끓어오를 것이 틀림없습니다! 최고로 뜨거운 뮤지컬 쇼 어트랙션!' , 'img/attraction/sing-on-tour-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '30' , '04' , '스페이스 판타지 더 라이드' , '라이드' , '웅장한 우주 공간에 흩어진 아름다운 별들 사이를 종횡무진 질주하는 우주선입니다. 해방감 넘치는 우주의 모험이 시작됩니다!' , 'img/attraction/space-fantasy-the-ride-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '31' , '04' , '세서미 스트리트 4-D 무비 매직' , '쇼' , '세서미 스트리트 ™의 동료들과 바다로 잠수해, 하늘을 나는 4-D의 세계로!\r\n오리지널 3D 무비에 놀라운 신세대 효과가 더해진 4-D 엔터테인먼트입니다. 세서미 스트리트™의 친구들, 엘모, 쿠키 몬스터, 빅버드, 버트, 어니와 함께 상상력이 넘치는 세계를 오감으로 느껴보세요.' , 'img/attraction/sesame-street-4d-movie-magic-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '32' , '04' , '할리우드 드림 더 라이드' , '라이드' , '온몸을 관통하는 짜릿한 짜릿함을 느껴보세요! 하늘을 나는 듯한 상쾌 컵받침.\r\n유니버설·스튜디오·재팬과 세계 굴지의 코스터 메이커의 독창성과 최첨단 기술이 집결한 하늘을 나는 듯한 상쾌 라이드입니다. 마음에 드는 BGM을 배경으로, 눈이 확 뜨이는 스릴이 전신을 꿰뚫어 냅니다.' , 'img/attraction/hollywood-dream-the-ride-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '33' , '04' , '헐리우드 드림 더 라이드 백드롭' , '라이드' , '높이 43m에서 있을 수 없는 각도에서의 정수리 바로 아래! 예측 불가능, 극한의 스릴과 자극! 대절규의 백드롭 코스터 발진.' , 'img/attraction/hollywood-dream-the-ride-backdrop-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '34' , '04' , '플레잉 위드 원숭이 조지 ™' , '쇼' , 'LET''S GEORGE! 언제나, 뭐든지 알고 싶은 것뿐이에요! 그런 호기심 가득한 사랑스러운 모습이 전세계에서 인기인 ''원숭이 조지 ™''가 어트랙션으로! 그림 속에 있는 조지가 현실의 세계로 뛰쳐나가 버렸습니다! 처음 만나는 세상에 두근두근 흥미진진, 스튜디오 안을 천진난만하게 돌아다니는 조지와 친구가 되어 다함께 놀아요!' , 'img/attraction/playing-with-curious-george-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '35' , '04' , '유니버설 스펙터클 나이트 퍼레이드 베스트 오브 할리우드' , '스트리트' , '플로트×매핑으로 인한 경악의 현장감이, 퍼레이드의 상식을 변화시킵니다! 압도적인 마법에 매료된 ''해리포터'', 세계 최초의 ''트랜스폼하는 플로트'', 공룡세계에 던져지는 ''쥬라기월드'', 엉망진창인 디스코공간으로 변신시키는 ''미니언즈'', 차례로 찾아오는 궁극의 현장감이 당신을 사로잡습니다! 특별구역의 등장으로 한층 더 파워업!' , 'img/attraction/universal-spectacle-night-parade-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '36' , '04' , '유니버설 몬스터 라이브 로큰롤 쇼' , '쇼' , '펑키하고 크레이지한 몬스터, 비틀쥬스™와 드라큘라, 늑대, 프랑켄슈타인™, 그리고 프랑켄슈타인의 신부™들이, 밤의 무덤에 대집결. 일찌기 사람들을 공포의 구렁텅이로 몰아넣었던 그들이, 이번에는 할리우드 연습의 노래와 춤으로 회장을 흥분의 소용돌이로 몰아넣습니다. 누구나 아는 록 넘버로 펼쳐지는 본격 라이브 엔터테인먼트는 절대 놓칠 수 없습니다.' , 'img/attraction/universal-monster-live-rock-and-roll-show-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '37' , '05' , '어메이징 어드벤처 오브 스파이더 맨 더 라이드 4K3D' , '쇼' , '사상 최초, 7년 연속 세계 No.1 라이드 수상의 세계 최고 어트랙션이 세계 최고 기술 「4K3D」를 손에 넣어, 완전히 다른 라이드로 초변신! 현실과 구별할 수 없을 정도의 믿을 수 없는 박력과 1000%의 특수 효과가 가져오는 다른 차원의 흥분을 만나다!' , 'img/attraction/the-amazing-adventures-of-spider-man-the-ride-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '38' , '05' , '터미네이터 2:3-D®' , '쇼' , '눈앞에서 일어날 미래를 건 인류와 사이보그의 싸움. 뒤로 물러설 수 없는 초입체 영상이 다가오더니 갑자기 스크린의 영웅이 무대에 출현합니다. 박진감 넘치게 재현된 ''터미네이터®''의 세계는 현실을 침식합니다. 그리고 순식간에 삼켜버립니다.' , 'img/attraction/terminator2-3d-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '39' , '05' , '페스티벌 인 더 파크' , '게임' , '파크 중앙의 라군 근처에 있는 이곳에서는 카니발 게임에 도전할 수 있어요! 놀이기구, 쇼를 둘러보는 틈틈이 배불리 먹고 나면 꼭 몸을 움직여서 게임에 도전해 보세요! 귀여운 경품을 받을 수 있는 기회!' , 'img/attraction/festival-in-the-park-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '40' , '06' , '백 드래프트' , '쇼' , '가까이서 직면한 대화재에 꼼짝도 하지 못하고, 꼼짝도 하지 않을 수 없습니다!\r\n압권의 화재 장면을 그린 대작 ''백 드래프트''의 세계가 눈앞에 펼쳐집니다. 폭발하는 드럼통, 솟구치는 불기둥, 벽으로 다가오는 불꽃, 그리고 몸을 감싸는 열풍입니다. 어마어마한 대화재의 공포에 꼼짝없이 못한답니다!' , 'img/attraction/backdraft-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '41' , '07' , '플라잉 다이너소어' , '라이드' , '세계 최장×세계 최대 높이의 최신예 코스터 출현. 폭주하는 공룡 프테라노돈에 등을 잡혀 전신으로 하늘을 날아요! 쥬라기 공원 세계가 360도 휘둘리는 일상이 날아가 버리는 "있을 수 없는" 스릴 체험이, 여기에.' , 'img/attraction/the-flying-dinosaur-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '42' , '07' , '쥬라기 공원 더 라이드' , '라이드' , '절체절명! 태고의 공룡을 만나는 탐험이 예상치 못한 트러블이 되었습니다. 사납게 휘몰아치는 T-렉스에게 절체절명, 벗어나기 위해 25.9m 아래로 곤두박질쳤어요!' , 'img/attraction/jurassic-park-the-ride-a.jpg' , 'Y' , '10:00' , '18:00' );
+INSERT INTO ATTRACTION VALUES( '43' , '08' , '워터월드' , '쇼' , '영화 그대로의 장절 스턴트에 숨을 죽이는, 대인기의 액션 쇼가 진화했습니다. 새로워진 서라운드 음향 시스템은 폭발과 총격에 휘말린 듯한 압도적 현장감을 안겨줍니다! 긴박감 넘치는 수상 배틀의 한가운데로 지금 던져집니다!' , 'img/attraction/waterworld-a.jpg' , 'Y' , '10:00' , '18:00' );
+
+
+
+-- TICKET_NO, VALID_PD, TICKET_PC, TICKET_NM, TICKET_DC, PHOTO_COURS, CMMN_CODE
+INSERT INTO TICKET VALUES( 'T1' , 12 , '1DAY 스튜디오 패스' , '아침부터 저녁까지, 하루종일 파크를 즐길 수 있습니다!\r\n※입장일에 따라 가격이 다릅니다.' , 'img/ticket/thumb_1-day-s.jpg' , '0100' );
+INSERT INTO TICKET VALUES( 'T2' , 12 , '1.5DAY 스튜디오 패스' , '연이틀 파크를 즐길 수 있는 1.5일권입니다!' , 'img/ticket/thumb_1-5day-s.jpg' , '0200' );
+INSERT INTO TICKET VALUES( 'T3' , 12 , '2DAY 스튜디오 패스' , '연속된 2일간 공원을 즐길 수 있는 2일권입니다!' , 'img/ticket/thumb_2-day-s.jpg' , '0300' );
+INSERT INTO TICKET VALUES( 'T4' , 12 , '연간 패스 라이트' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-light-ticket.jpg' , '0400' );
+INSERT INTO TICKET VALUES( 'T5' , 12 , '연간 패스' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-ticket.jpg' , '0500' );
+INSERT INTO TICKET VALUES( 'T6' , 12 , '연간 패스 VIP' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-vip-ticket.jpg' , '0600' );
+INSERT INTO TICKET VALUES( 'T7' , 12 , '익스프레스 패스 프리미엄' , '모든 인기 어트랙션의 대기시간 단축입니다.\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요.' , 'img/ticket/thumb_express-pass-premium-ticket.jpg' , '0700' );
+INSERT INTO TICKET VALUES( 'T8' , 6 , '익스프레스 패스 7' , '대기시간을 단축하여 7개의 인기 어트랙션을 원활하게 체험하세요!\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요.' , 'img/ticket/thumb_express-pass-7-ticket.jpg' , '0800' );
+INSERT INTO TICKET VALUES( 'T9' , 6 , '익스프레스 패스 4' , '대기시간을 단축하여 4가지 인기 어트랙션을 원활하게 체험하세요!\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요' , 'img/ticket/thumb_express-pass-4-ticket.jpg' , '0900' );
+
+commit;
+
+
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('1' , '최고의 전망을 자랑하는 235개의 객실을 보유하고 있으며 
+5성급 호텔로서 샴페인 바, 미쉐린 스타 레스토랑, 실내 수영장, 
+피트니스 센터, 연회시설이 있습니다. ' , '시그니엘' , '031-476-4813' , '경기도 화성시 남양로 1540번길 34' , 'img/hotel/sig.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('2' , '2019년 포브스지에서 선정한 5성급 호텔입니다. 호텔에는 
+6개의 식음료 매장과 풀 서비스 스파가 마련되어 있습니다.' , '신라호텔' , '031-421-6602' , '경기도 화성시 남양로 1538번길 12' , 'img/hotel/sinra.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('3' , 'USK전망을 갖춘 숙박시설, 무료 고속 유무선 인터넷을 
+제공합니다. 체크인시 무료 음료 서비스가 제공됩니다.' , '롯데호텔' , '031-475-0067' , '경기도 화성시 남양로 1538번길 35' , 'img/hotel/lotte.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('4' , '202개의 모든 객실은 반려동물 동반가능이며 요가와 
+필라테스 스튜디오, 피트니스 센터, 실내 골프장 등을 보유하고 있습니다.' , '그랜드 머큐어' , '031-422-6680' , '경기도 화성시 남양로 1535번길 8' , 'img/hotel/grandm.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('5' , 'USK전망을 한눈에 볼수있으며 5개의 레스토랑, 최첨단 피트니스 시설 
+및 전통 한국식 사우나를 보유하고 있습니다.' , '포시즌스' , '031-496-3205' , '경기도 화성시 남양로 1541번길 22' , 'img/hotel/for.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('6' , '피트니스 센터와 바를 보유한 5성급 숙소입니다. USK와 가장 근접하며 
+수영장을 무료로 사용할수 있습니다.' , '노보텔' , '031-405-1237' , '경기도 화성시 남양로 1539번길 19' , 'img/hotel/novotel.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('7' , '쇼핑 아케이드, 아이스 스케이트장 및 수영장을 운영하고 있으며 
+5성급 호텔로서 모든 객실은 카펫으로 마감되어 있습니다.' , '그랜드 하얏트' , '031-471-0078' , '경기도 화성시 남양로 1539번길 5' , 'img/hotel/grandh.png');
+INSERT INTO HOTEL
+(HOTEL_NO ,  HOTEL_DC , HOTEL_NM ,  HOTEL_TELNO , HOTEL_LQTX , PHOTO_COURS)
+VALUES ('8' , '월트 트래블 어워드가 최고의 호텔로 선정한바 있으며, 연중 내내 
+운영되는 실내 수영장과 여유로운 분위기의 스파, 피트니스 센터를 자랑합니다.' , '콘래드' , '031-492-3607' , '경기도 화성시 남양로 1541번길 16' , 'img/hotel/conred.png');
+
+
+
+
+
+insert into ADI_FCLTY
+values ('01', 'A1', '01','식당', '스리 브룸스틱스', '호그와트마법 학교의 선생님과 학생들도 즐겨 찾는 호그스미드의 오래된 술집 겸 여관. 명물인 버터 맥주 외에도 피시앤드칩스와 고기 파이와 같은 영국 전통의 맛을 즐길 수 있습니다.',  'img/adi_fclty/h_derv.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('01',  'A2','01','식당','호그스 헤드 술집', '아이들도 즐길 수 있는 마법세계의 음료 버터 맥주부터 호그스 헤드 특별 양조 생맥주까지 폭넓게 준비되어 있습니다.' , 'img/adi_fclty/h_pub.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',   'B1','01','식당', '딜리셔스 미! 더 쿠키 키친', '미니언들의 달콤하고 맛있는 것에대한 지칠 줄 모르는 탐구심이 이곳에 집결! 세기의 발명품 
+쿠키 제조 머신으로 미니언이 최고로 맛있는 쿠키 샌드를 만들어 줄 거예요.', 'img/adi_fclty/M_cookie-kitchen.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',  'B2','01', '식당', '포파나나', '미니언이 가장 좋아하는 것은..? 물론 바나나! 그래서 그들이 만들면 팝콘까지도 당연히 초코 바나나 맛! ' ,  'img/adi_fclty/M_pop-a-nana.jpg');
+
+
+insert into ADI_FCLTY
+values ('03',  'C1', '01','식당', '스누피 백롯 카페', '스누피 친구들과 함께 즐기는 아기자기하고 귀여운 햄버거 레스토랑. ' , 'img/adi_fclty/U_backlot.jpg');
+
+insert into ADI_FCLTY
+values ('03',  'C2','01', '식당', '헬로키티의 코너 카페', '너무 귀여워서 먹을 수 없어! 헬로키티 모양의 귀여운 음식들이 한가득! ' ,  'img/adi_fclty/U_corner-cafe.jpg');
+
+
+insert into ADI_FCLTY
+values ('04',   'D1','01','식당', '비버리힐즈 블랑제리', '비버리힐스 거리, 프렌치 스타일의 카페에 앉아 샌드위치와 디저트를 즐겨보세요. ' , 'img/adi_fclty/H_beverly-hills.jpg');
+
+
+insert into ADI_FCLTY
+values ('04',  'D2','01', '식당', '멜즈 드라이브인', '영화청춘 낙서 속 세계를 만끽하세요! 50년대 분위기의 햄버거 레스토랑입니다. ' ,  'img/adi_fclty/H_mels-drive.jpg');
+
+
+insert into ADI_FCLTY
+values ('04',  'D3','01', '식당', '스튜디오 스타즈 레스토랑', '영화 스튜디오 속 카페테리아에서 아메리칸 사이즈의 BBQ 프라이드 치킨을 즐겨보세요. ' ,  'img/adi_fclty/H_studio-stars.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('05',  'E1','01', '식당', '피네간즈 바그릴', '브루클린의 아일랜드풍 펍 카운터 바에서 즐기는 제철 과일로 만든 시즌 하이볼 칵테일과 맛있는 식사도 함께 즐겨보세요.' ,  'img/adi_fclty/N_finnegans.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('05',  'E2', '01','식당', '루이즈 뉴욕피자팔러', '리틀 이태리의 캐주얼 이탈리안 레스토랑. 이곳에서 맛보는 파스타와 피자는 천하일품입니다!' ,  'img/adi_fclty/N_louies.jpg');
+
+
+insert into ADI_FCLTY
+values ('05', 'E3', '01', '식당', '사이도', '대도시 뉴욕의 맨하탄 거리에서 즐기는 스타일리시한 일식 요리 전문점입니다.' ,  'img/adi_fclty/N_saido.jpg');
+
+insert into ADI_FCLTY
+values ('05',  'E4','01', '식당', '파크 사이드 그릴', '탁 트인 차분한 분위기에서 스테이크와 같은 정통 그릴 요리를 세트 메뉴로 즐겨보세요.' ,  'img/adi_fclty/N_park-side-grille.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('05', 'E5', '01', '식당', '아즈라 디 카프리', '즉석 벽돌 오븐 피자가 천하일품인 곳! 푸른 동굴을 연상케 하는 분위기의 실내에서 느긋하게 즐길 수 있습니다.' ,  'img/adi_fclty/N_azzurra-di-capri.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('06',  'F1','01', '식당', '해피니스 카페', '샌프란시스코의 창고를 개조해 만든 해피 바이러스로 가득한 카레라이스 전문점입니다.' , 'img/adi_fclty/S_happiness-cafe.jpg');
+
+
+insert into ADI_FCLTY
+values ('06',  'F2', '01','식당', '더 드래곤즈 펄', '샌프란시스코 차이나타운에 위치한 중화요리 전문점입니다.' , 'img/adi_fclty/S_dragons-pearl.jpg');
+
+
+insert into ADI_FCLTY
+values ('07',  'G1', '01','식당', '폿실 퓨엘즈', '쥬라기 공원에 있는 스낵바입니다. 쥬라기 콘을 꼭 맛보세요.' ,  'img/adi_fclty/J_fossil-fuels.jpg');
+
+insert into ADI_FCLTY
+values ('07', 'G2', '01', '식당', '로스트월드 레스토랑', '정글에 숨어있는 비밀 레스토랑. 거기에서 기다리고 있는 야성미 넘치는 플레이트 요리, 남미의 소울푸드 「페이조아다」를 즐겨보자!' ,  'img/adi_fclty/J_lost-world.jpg');
+
+insert into ADI_FCLTY
+values ('07', 'G3','01', '식당', '디스커버리 레스토랑', '영화 쥬라기 공원에 등장하는 방문자 센터를 재현한 곳에서 세계의 맛으로 탄생한 정글을 테마로 한 메뉴를 맛보실 수 있습니다.' ,  'img/adi_fclty/J_discovery.jpg');
+
+insert into ADI_FCLTY
+values ('08',   'H1','01','식당', '애머티 랜딩 레스토랑', '영화 죠스의 무대 애머티 빌리지에 있는 조선소를 모티브로 한 프라이드 치킨이 명물인 레스토랑.' ,  'img/adi_fclty/A_amity-landing.jpg');
+
+
+insert into ADI_FCLTY
+values ('08',  'H2', '01','식당', '보드워크 스낵', '항구 거리 애머티 빌리지에 자리 잡은 간이 레스토랑입니다.' ,  'img/adi_fclty/A_boardwalk-snacks.jpg');
+
+insert into ADI_FCLTY
+values ('08',  'H3','01', '식당', '애머티 아이스크림', '영화 조스의 엘렌 브로디가 경영하는 아이스크림 전문점입니다.' , 'img/adi_fclty/A_amity-ice-cream.jpg');
+
+
+
+
+insert into ADI_FCLTY
+values ('01', 'I1','02', '숍', '종코의 장난감 전문점', '위즐리 가문의 쌍둥이인 조지와 프레드도 즐겨 찾는 장난감 전문점입니다.' , 'img/adi_fclty/h_zonko.jpg');
+
+
+insert into ADI_FCLTY
+values ('01', 'I2', '02','숍', '허니듀크', '호그와트™ 마법 학교의 학생들도 무척 좋아하는 과자 가게.‘베르티 보츠의 온갖 맛이 나는 강낭콩 젤리’ 와 ‘개구리 초콜릿’ 등 마법세계의 과자를 맛보세요.' ,  'img/adi_fclty/h_honey.jpg');
+
+
+insert into ADI_FCLTY
+values ('01', 'I3', '02','숍', '올리밴더스의 가게', '마법지팡이 상자가 천장까지 수북하게 쌓여 있는 가게 안에서 ‘지팡이가 마법사를 선택하는’ 모습을 체험할 수 있습니다.' ,  'img/adi_fclty/h_olli.jpg');
+
+insert into ADI_FCLTY
+values ('01', 'I4', '02','숍', '와이제이커 마술용품점', '쌍안경과 돋보기, 컴퍼스 등 각종 마법 도구를 구할 수 있습니다. 망토와 넥타이와 같은 호그와트 마법 학교 학생들의 필수 아이템도 이곳에서 찾아보세요.' ,  'img/adi_fclty/h_wise.jpg');
+
+
+insert into ADI_FCLTY
+values ('01', 'I5', '02','숍', '부엉이 우체국  부엉이 방', '부엉이로 가득한 ‘부엉이 방’에 인접해 있는 ‘부엉이 우체국’. 호그스미드의 우표와 문구 용품 등을 취급할 뿐만 아니라 여기서 편지를 보내면 호그스미드의 소인으로 배달되는 서비스도 제공합니다.' ,  'img/adi_fclty/h_owl.jpg');
+
+
+
+
+insert into ADI_FCLTY
+values ('01', 'I6', '02','숍', '더비시 앤드 뱅스', '호그스미드의 마법 도구점. ‘심령 안경’ 등 즐거운 마법 도구가 다양하게 준비되어 있습니다. 퀴디치에 필요한 도구와 호그와트™ 마법 학교의 교복이나 소품도 이곳에서 판매합니다.' ,  'img/adi_fclty/h_derv.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('01', 'I7','02', '숍', '글래드래그스 마법사 옷가게', '헤르미온느가 크리스마스 댄스 파티 때 입었던 그 드레스가 진열된 ‘글래드래그스 마법사 옷가게’ 입니다.' ,  'img/adi_fclty/h_glad.jpg');
+
+
+
+insert into ADI_FCLTY
+values ('01', 'I8','02', '숍', '필치의 몰수품점', '호그와트 마법 학교 관리인 아구스 필치가 교칙을 위반한 학생들에게서 압수한 보물들을 찾을 수 있습니다.' ,  'img/adi_fclty/h_filch.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',  'J1','02','숍', '펀 스토어', '장난의 천재 미니언들의 장난감을 향한 사랑과 정열이 가득 담긴 스토어. 너나 할 것 없이 무의식중에 웃게 만드는 즐거운 상품이 한가득!' ,  'img/adi_fclty/M_fun-store.jpg');
+
+
+insert into ADI_FCLTY
+values ('02', 'J2','02', '숍', '미니언즈 POP! SHOP', '뭐든지 척척 해내는 미니언은 유행에도 민감. 그들이 제안하는 최신 패션 아이템을 이곳에서 꼭 손에 넣으세요!' ,  'img/adi_fclty/M_pop-shop.jpg');
+
+
+insert into ADI_FCLTY
+values ('02', 'J3', '02','숍', '스위트 서렌더', '달콤한 것이라면 사족을 못쓰는 미니언들이 꾸미는 스토어. 거대한 껌 볼 머신과 메가 사이즈의 캔디... 파격적인 즐거움에 보기만 해도 활기가 넘쳐요!' ,  'img/adi_fclty/M_sweet-surrender.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',  'J4','02','숍', '바나나 카바나', '가장 좋아하는 바나나를 던져 주고, 미니언에게 선물을 받자!' , 'img/adi_fclty/M_banana-cabana.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',  'J5','02','숍', '스페이스 킬러', '세 자매가 아주 좋아하는, 그 유명한 바주카포 게임에 도전!' , 'img/adi_fclty/M_space-killer.jpg');
+
+
+insert into ADI_FCLTY
+values ('02', 'J6','02', '숍', '딜리셔스 미! 포토 오퍼튜니티', '커다란 쿠키를 만들기 위해, 미니언이 ‘확대경’을 이용해서 키친의 벽도 뚫어버릴 정도로 거대해졌어요! 미니언다운 유쾌한 사고도 이곳에서는 절호의 셔터찬스!' ,  'img/adi_fclty/M_delicious-me.jpg');
+
+
+insert into ADI_FCLTY
+values ('02',  'J7','02','숍', '미니언 랠리', '미니언 파크 안 곳곳에 숨어 있는 미니언을 찾아 보세요! 성공하면 미니언즈가 선물을 드립니다. ' ,  'img/adi_fclty/M_minion-rally.jpg');
+
+
+insert into ADI_FCLTY
+values ('03', 'K1','02', '숍', '스누피 스튜디오 스토어', '다양한 스누피 캐릭터 상품이 가득합니다!' ,  'img/adi_fclty/U_pic01.jpg');
+
+
+insert into ADI_FCLTY
+values ('03', 'K2','02', '숍', '세서미 스트리트키즈 스토어', '세서미 스트리트 장난감으로 한가득! 아이들이 엄청나게 좋아해요!' ,  'img/adi_fclty/U_pic03.jpg');
+
+
+insert into ADI_FCLTY
+values ('03', 'K3','02', '숍', '헬로키티 리본 부티크', '어린이들도 Happy!한 깜찍한 헬로키티 굿즈 유니버설 원더랜드에서 즐겁게 놀고 난 후에는 어린이들도 저절로 Happy해지는 헬로키티 굿즈를 손에 넣자!' ,  'img/adi_fclty/U_pic04.jpg');
+
+
+insert into ADI_FCLTY
+values ('03', 'K4','02', '숍', '헬로키티 포토숍', '헬로키티와 보낸 최고의 시간을 사진으로 남기자!' ,  'img/adi_fclty/U_pic05.jpg');
+
+insert into ADI_FCLTY
+values ('03', 'K5','02', '숍', '버트와 어니의 프로숍 게임 플레이스', '카니발 게임에 도전하여 맘에 드는 상품을 노려보아요!' ,  'img/adi_fclty/U_pic06.jpg');
+
+
+insert into ADI_FCLTY
+values ('04', 'L1','02', '숍', '유니버설 스튜디오 셀렉트', '굿즈라면, 이곳에서 결정!
+유니버설 스튜디오의 심벌 ‘유니버설 지구본’ 굿즈는 물론, 누구나 다 아는 유니버설 영화의 아이코닉한 굿즈가 한가득!' ,  'img/adi_fclty/H_studios_select.jpg');
+
+insert into ADI_FCLTY
+values ('04', 'L2','02', '숍', '백롯 액세서리', '파크에 오시면 먼저 이곳에서 마음에 드는 상품을 찾아 입어 봐요!' ,  'img/adi_fclty/H_backlot.jpg');
+
+
+insert into ADI_FCLTY
+values ('04', 'L3','02', '숍', '비버리힐즈 기프트', '위저딩 월드 오브 해리 포터기념품은 이곳에서.' ,  'img/adi_fclty/H_beverly_hills.jpg');
+
+
+insert into ADI_FCLTY
+values ('04', 'L4','02', '숍', '캘리포니아 과자점', '다과 선물을 고르고 계시나요? 그렇다면 파크 안의 모든 다과가 모여있는 이곳으로 오세요. 후회하지 않으실 것입니다.' , 'img/adi_fclty/H_california.jpg');
+
+insert into ADI_FCLTY
+values ('04', 'L5','02', '숍', '캐릭터스 포 유', '세서미 스트리트 굿즈를 즐기면서 찾아보자!' ,  'img/adi_fclty/H_characters_4u.jpg');
+
+
+insert into ADI_FCLTY
+values ('04', 'L6','02', '숍', '피너츠코너 스토어', '세련되고 깜찍한, 전혀 새로운 스누피 상품은 이곳에서만 만날 수 있어요!' ,  'img/adi_fclty/H_peanuts.jpg');
+
+
+insert into ADI_FCLTY
+values ('04', 'L7','02', '숍', '헬로키티 디자인스튜디오', '파크 오리지널의 헬로키티 굿즈라면 이곳! 이곳에서만 만날 수 있는 트렌드 아이템에 심쿵!' , 'img/adi_fclty/H_kitty.jpg');
+
+
+insert into ADI_FCLTY
+values ('04',  'L8','02','숍', '스페이스 판타지스테이션', '휴대용 필수 아이템이 모두 집결!헤어밴드와 모자 등의 휴대용 굿즈로 기분 UP!' , 'img/adi_fclty/H_space_fantasy.jpg');
+
+
+insert into ADI_FCLTY
+values ('05', 'L1','02', '숍', '어메이징 스파이더맨 스토어', '스파이더맨의 인기 상품이 한가득!' ,  'img/adi_fclty/N_pic01.jpg');
+
+
+insert into ADI_FCLTY
+values ('06', 'N1','02', '숍', '샌프란시스코 캔디즈', '해맑고 귀여운 미니언 밥이 사랑하는 곰인형 “팀”의 굿즈는 이곳! 안아주고 싶은 폭신폭신한 털, 단추로 된 눈과 조그만 혓바닥, 능청맞은 표정이 너무너무 깜찍하다!' ,  'img/adi_fclty/S_pic02.jpg');
+
+insert into ADI_FCLTY
+values ('07', 'M1','02', '숍', '쥬라기 아웃피터즈', '방심은 금물! 숍에서도 믿을 수 없는 깜짝 놀랄만한 체험이 기다린다!' ,  'img/adi_fclty/J_pic01.jpg');
+
+
+insert into ADI_FCLTY
+values ('08', 'O1', '02','숍', '애머티 아일랜드기프트', '죠스 관련 상품이 가득한 해양레저용품 매장' ,  'img/adi_fclty/A_pic01.jpg');
+
+
+insert into ADI_FCLTY
+values ('08', 'O2','02', '숍', '애머티 보드워크 게임', '블록을 부수고, 동전을 던지면 호화로운 경품에 당첨될지도 모릅니다!' ,  'img/adi_fclty/A_pic03.jpg');
+
+insert into ADI_FCLTY
+values ('08',  'O3','02','숍', '죠스 포토', '죠스 의 거대한 입이 쩌억 벌어졌어요! 촬영 중의 즐거운 시간을 1장의 사진에 담아 가져가요!' ,  'img/adi_fclty/A_pic02.jpg');
+
+
+
+insert into REPRSNT_GOODS
+values('01', 'A1', '1',  'img/adi_fclty/hpoter.jpg');
+
+insert into REPRSNT_GOODS
+values('01','A1', '2', 'img/adi_fclty/hmom.jpg');
+
+insert into REPRSNT_GOODS
+values('01',  'A1', '3',  'img/adi_fclty/hbihu.jpg');
+
+insert into REPRSNT_GOODS
+values('02','B1', '4', 'img/adi_fclty/mpopcon.jpg');
+
+insert into REPRSNT_GOODS
+values('02','B1', '5', 'img/adi_fclty/mcooki.jpg');
+
+insert into REPRSNT_GOODS
+values('02','B1', '6', 'img/adi_fclty/mpopconn.jpg');
+
+
+
+commit;
+

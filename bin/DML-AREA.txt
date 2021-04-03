@@ -1,0 +1,13 @@
+﻿
+-- AREA(AREA_NO, AREA_NM)
+INSERT INTO AREA VALUES( '01' , '위저딩 월드 오브 해리 포터™' );
+INSERT INTO AREA VALUES( '02' , '미니언 파크' );
+INSERT INTO AREA VALUES( '03' , '유니버설 원더랜드' );
+INSERT INTO AREA VALUES( '04' , '할리우드' );
+INSERT INTO AREA VALUES( '05' , '뉴욕' );
+INSERT INTO AREA VALUES( '06' , '샌프란시스코' );
+INSERT INTO AREA VALUES( '07' , '쥬라기 공원' );
+INSERT INTO AREA VALUES( '08' , '애머티 빌리지' );
+
+
+

@@ -1,0 +1,11 @@
+﻿
+-- TICKET_NO, VALID_PD, TICKET_PC, TICKET_NM, TICKET_DC, PHOTO_COURS, CMMN_CODE
+INSERT INTO TICKET VALUES( '10' , 12 , '1DAY 스튜디오 패스' , '아침부터 저녁까지, 하루종일 파크를 즐길 수 있습니다!\r\n※입장일에 따라 가격이 다릅니다.' , 'img/ticket/thumb_1-day-s.jpg' , '0100' );
+INSERT INTO TICKET VALUES( '20' , 12 , '1.5DAY 스튜디오 패스' , '연이틀 파크를 즐길 수 있는 1.5일권입니다!' , 'img/ticket/thumb_1-5day-s.jpg' , '0200' );
+INSERT INTO TICKET VALUES( '30' , 12 , '2DAY 스튜디오 패스' , '연속된 2일간 공원을 즐길 수 있는 2일권입니다!' , 'img/ticket/thumb_2-day-s.jpg' , '0300' );
+INSERT INTO TICKET VALUES( '40' , 12 , '연간 패스 라이트' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-light-ticket.jpg' , '0400' );
+INSERT INTO TICKET VALUES( '50' , 12 , '연간 패스' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-ticket.jpg' , '0500' );
+INSERT INTO TICKET VALUES( '60' , 12 , '연간 패스 VIP' , '1년 동안 여러 번 즐길 수 있어요! 연간 패스 한정 특전 포함!' , 'img/ticket/thumb_annual-pass-vip-ticket.jpg' , '0600' );
+INSERT INTO TICKET VALUES( '70' , 12 , '익스프레스 패스 프리미엄' , '모든 인기 어트랙션의 대기시간 단축입니다.\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요.' , 'img/ticket/thumb_express-pass-premium-ticket.jpg' , '0700' );
+INSERT INTO TICKET VALUES( '80' , 6 , '익스프레스 패스 7' , '대기시간을 단축하여 7개의 인기 어트랙션을 원활하게 체험하세요!\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요.' , 'img/ticket/thumb_express-pass-7-ticket.jpg' , '0800' );
+INSERT INTO TICKET VALUES( '90' , 6 , '익스프레스 패스 4' , '대기시간을 단축하여 4가지 인기 어트랙션을 원활하게 체험하세요!\r\n※ 반드시 ''자세히 보기''에서 대상 어트랙션 등을 확인해주세요' , 'img/ticket/thumb_express-pass-4-ticket.jpg' , '0900' );
