@@ -38,9 +38,26 @@ ERD / Class Diagram
 * データベースとの連結  
   MVCパターンを学ぶ前、開発しましたのでClassの部品化を使いこなせませんでした。  
   今は現場で必ず使われてあるMVCをちゃんと学んでいます。 
-* ログイン機能
+* ログイン機能  
+  会員情報をログインで利用するためのDTO Classを生成、ログイン Classで読み込む。
 ```java
-
+public LoginPopup() {
+  super((Frame)null , "" , true);
+  //부모자리	 //타이틀  //젤먼저뜬창을 핸들링해야 다음창으로가능 //모달  
+  HashMap<String , Object>hm = Common.getHm();
+  this.loginDto = (LoginDTO)hm.get("LoginDTO");
+}
+```
+  データベースとの連結
+```java
+public void dbconnect() {
+	try {
+		Class.forName(driver);
+		con = DriverManager.getConnection(url, user, password);
+	} catch(Exception e) {
+		e.printStackTrace();
+	}
+}
 ```
 <br/>  
 <br/>  
