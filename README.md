@@ -3,6 +3,7 @@ USK [ Universal Studios Korea ] . Stand alone type
 2020年12月から2021年7月までのJAVA研修で初めて作ったチームプロジェクトです。  
 1月21日から3月23日までの日程でした。
 韓国にもユニバーサルスタジオができてほしいと願いの気持ちが込めてあります。  
+3人のチームになって主に担当した部分はログイン、会員登録、管理者メニュー、UI、管理者データベースとの連結です。  
 <br/>  
 <br/>  
                       
@@ -26,4 +27,14 @@ USK [ Universal Studios Korea ] . Stand alone type
 <br/>  
 <br/>  
 
+ERD / Class Diagram
+-------------------
 
+<br/>  
+<br/>  
+
+コードレビュー
+--------------
+
+<br/>  
+<br/>  
