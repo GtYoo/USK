@@ -35,11 +35,12 @@ ERD / Class Diagram
 
 コードレビュー
 --------------
-* データベースとの連結  
-  MVCパターンを学ぶ前、開発しましたのでClassの部品化を使いこなせませんでした。  
-  今は現場で必ず使われてあるMVCをちゃんと学んでいます。 
+* MVCパターンを学ぶ前、開発しましたのでClassの部品化を使いこなせませんでした。  
+  今は現場で必ず使われてあるMVCをちゃんと学んでいます。  
+<br/>
 * ログイン機能  
-  会員情報をログインで利用するためのDTO Classを生成、ログイン Classで読み込む。
+会員情報をログインで利用するためのDTO Classを生成、ログイン Classで読み込む。
+
 ```java
 public LoginPopup() {
   super((Frame)null , "" , true);
@@ -48,7 +49,7 @@ public LoginPopup() {
   this.loginDto = (LoginDTO)hm.get("LoginDTO");
 }
 ```
-  データベースとの連結
+  * データベースとの連結
 ```java
 public void dbconnect() {
 	try {
