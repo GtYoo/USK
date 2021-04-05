@@ -1,5 +1,6 @@
 USK [ Universal Studios Korea ] . _Stand alone type_
 ===================================================
+
 2020年12月から2021年7月までのJAVA研修で初めて作ったチームプロジェクトです。
 1月21日から3月23日までの日程でした。
 韓国にもユニバーサルスタジオができてほしいと願いの気持ちが込めてあります。
@@ -20,13 +21,14 @@ USK [ Universal Studios Korea ] . _Stand alone type_
 
 使用技術
 --------
+
 * Oracle SQL
 * JAVA
 * eclipse
 * Tortoise SVN
 * Photoshop
 * Illustrator
-<br>
+  <br>
 
 <br>
 
@@ -42,23 +44,28 @@ ERD / Class Diagram
 
 Detail
 --------------
+
 * MVCパターンを学ぶ前、開発しましたのでClassの部品化を使いこなせませんでした。
- 今は現場で必ず使われてある `MVC` をちゃんと学んでいます。
+  今は現場で必ず使われてある `MVC` をちゃんと学んでいます。
 
 * ログイン機能 - 会員情報をログインで利用するための[DTO Class](https://github.com/GtYoo/USK/tree/main/src/dto)を生成、`ログイン Class`で読み込む。
 * 特に問題はありませんでしたが、データベースに会員情報を順番に入れるために `sequence` を利用して`PrimaryKey`を自動に入れることにしました。[MberJoinPopup.java ](https://github.com/GtYoo/USK/blob/main/src/usk/MberJoinPopup.java)
+
  ```java
  String insertMember = "INSERT INTO MBER VALUES(MBER_NO_SEQ.NEXTVAL,?,?,?,?,?,?)";
  ```
+
 ![ex-screenshot](img/usk_1.gif)
 
 
 
 * 会員退会した場合、情報を削除することではなく企業の政策により保存期間を仮定定義しました。データベースに会員退会の可否 Columnを作って保存します。[MberModify.java](https://github.com/GtYoo/USK/blob/main/src/usk/MberModify.java)
+
  ```java
  String mberDelete = "UPDATE MBER SET MBER_ID = ?, PASSWORD = ?, MBER_NM = ?, EMAIL = ?, "
  "MOBLPHON = ?, MBER_SECSN_AT = ? WHERE MBER_ID = ?";
  ```
+
  ```java
  pstmt2 = con.prepareStatement(mberDelete);
  pstmt2.setString(1, id);
@@ -71,6 +78,7 @@ Detail
 
  ret = pstmt2.executeUpdate();
  ```
+
 
 
 * 管理者メニューで重要だと思った部分は「全ての情報に接近できるのか」でした。ページを一気に見せることではなく見せたい `Row属性` 数を決め、ボタンによって次々と見せます。
