@@ -55,7 +55,7 @@ Detail
  String insertMember = "INSERT INTO MBER VALUES(MBER_NO_SEQ.NEXTVAL,?,?,?,?,?,?)";
  ```
 
-![ex-screenshot](img/usk_1.gif)
+<p align="center"><img src="img/usk_1.gif"><p>
 
 
 
@@ -94,7 +94,7 @@ String noSearch = "SELECT * FROM (SELECT O.* ,  ROWNUM RNUM FROM "
 				+ "WHERE RNUM >= ? AND ROWNUM <= ?";
 ```
 
-![ex_screenshot](img/usk_3.gif)
+<p align="center"><img src="img/usk_3.gif"><p>
 
 
 
@@ -104,7 +104,7 @@ String noSearch = "SELECT * FROM (SELECT O.* ,  ROWNUM RNUM FROM "
 
   `Widow builder`で作るのか大変で、全部苦労しました。
 
-![ex_screenshot](img/usk_2.gif)
+<p align="center"><img src="img/usk_2.gif"><p>
 
 
 
